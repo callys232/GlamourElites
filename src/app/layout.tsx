@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
+import FloatingActions from '../component/FloatingActions'
 
 const noLayout = ['/signin', '/signup', '/admin']
 
@@ -15,6 +16,7 @@ export default function Layout() {
         <Outlet />
       </main>
       {!hide && <Footer />}
+      {!hide && <FloatingActions />}
     </div>
   )
 }

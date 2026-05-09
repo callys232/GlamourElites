@@ -4,7 +4,7 @@ import ParticleBg from './ParticleBg'
 
 export default function Hero() {
   const { scrollY } = useScroll()
-  const y    = useTransform(scrollY, [0, 600], [0, 35])
+  const y = useTransform(scrollY, [0, 600], [0, 35])
   const fade = useTransform(scrollY, [0, 400], [1, 0])
 
   return (
@@ -83,7 +83,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-[10px] md:text-xs tracking-[0.35em] uppercase text-[#d4af37] mb-3"
             >
-              Makeup · Braiding · Tailoring · Barbering
+              Makeup · Braiding · Dreadlocks · Wigs & Barbering · Sew-in
             </motion.p>
 
             {/* Headline */}
